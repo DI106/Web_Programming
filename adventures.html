@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rick and Morty - Adventures</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+        body.adventures-page {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image: url("images/portalAD.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
 <body class="adventures-page">
 
     <header>
@@ -8,6 +35,7 @@
             <a href="adventures.html">ADVENTURES</a>
         </nav>
     </header>
+
 
     <main>
 
@@ -20,7 +48,10 @@
                 across the Rick and Morty multiverse.
             </p>
 
-            <label for="player-name">Enter your name:</label>
+
+            <label for="player-name">
+                Enter your name:
+            </label>
 
             <input
                 type="text"
@@ -28,16 +59,39 @@
                 placeholder="Your name"
             >
 
-            <label for="destination">Choose destination:</label>
+
+            <label for="destination">
+                Choose destination:
+            </label>
 
             <select id="destination">
-                <option value="">Select a location</option>
-                <option value="earth-c137">Earth C-137</option>
-                <option value="citadel">Citadel of Ricks</option>
-                <option value="blips-and-chitz">Blips and Chitz</option>
-                <option value="prime-dimension">Prime Dimension</option>
-                <option value="doofus-dimension">Doofus Dimension</option>
+
+                <option value="">
+                    Select a location
+                </option>
+
+                <option value="earth-c137">
+                    Earth C-137
+                </option>
+
+                <option value="citadel">
+                    Citadel of Ricks
+                </option>
+
+                <option value="blips-and-chitz">
+                    Blips and Chitz
+                </option>
+
+                <option value="prime-dimension">
+                    Prime Dimension
+                </option>
+
+                <option value="doofus-dimension">
+                    Doofus Dimension
+                </option>
+
             </select>
+
 
             <button onclick="startAdventure()">
                 Start Adventure
@@ -49,8 +103,10 @@
 
     </main>
 
+
     <script>
         function startAdventure() {
+
             const destination =
                 document.getElementById("destination").value;
 
@@ -60,23 +116,31 @@
             const message =
                 document.getElementById("message");
 
+
             if (playerName === "") {
                 message.textContent = "Please enter your name!";
                 return;
             }
+
 
             if (destination === "") {
                 message.textContent = "Please select a destination!";
                 return;
             }
 
+
             window.location.href =
                 "multiverse.html#" + destination;
         }
     </script>
 
+
     <footer>
-        <p>Team Members: Alinur Baidulla, Diyar Daniyarov</p>
+        <p>
+            Team Members: Alinur Baidulla, Diyar Daniyarov
+        </p>
     </footer>
 
 </body>
+
+</html>
