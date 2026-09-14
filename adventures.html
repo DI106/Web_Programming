@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<body class="adventures-page">
 
-    <link rel="stylesheet" href="CSS/style.css">
-    <style>
-    body.adventures-page {
-        margin: 0;
-        min-height: 100vh;
-
-        background-image: url("../images/portalAD.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        font-family: Arial, sans-serif;
-}
-    </style>
-</head>
-<body class = adventures-page>
     <header>
         <nav class="nav-menu">
             <a href="index.html">HOME</a>
@@ -31,61 +9,43 @@
         </nav>
     </header>
 
-    <main class="adventures-page">
-        <main class="adventures-page">
+    <main>
 
-    <section class="adventure-box">
+        <section class="adventure-box">
 
-        <h1>Choose Your Adventure</h1>
+            <h1>Choose Your Adventure</h1>
 
-        <p>
-            Select a destination and start your journey
-            across the Rick and Morty multiverse.
-        </p>
+            <p>
+                Select a destination and start your journey
+                across the Rick and Morty multiverse.
+            </p>
 
-        <label for="player-name">
-    Enter your name:
-</label>
+            <label for="player-name">Enter your name:</label>
 
-<input
-    type="text"
-    id="player-name"
-    placeholder="Your name"
->
+            <input
+                type="text"
+                id="player-name"
+                placeholder="Your name"
+            >
 
-        <label for="destination">Choose destination:</label>
+            <label for="destination">Choose destination:</label>
 
-        <select id="destination">
-            <option value="">Select a location</option>
+            <select id="destination">
+                <option value="">Select a location</option>
+                <option value="earth-c137">Earth C-137</option>
+                <option value="citadel">Citadel of Ricks</option>
+                <option value="blips-and-chitz">Blips and Chitz</option>
+                <option value="prime-dimension">Prime Dimension</option>
+                <option value="doofus-dimension">Doofus Dimension</option>
+            </select>
 
-            <option value="earth-c137">
-                Earth C-137
-            </option>
+            <button onclick="startAdventure()">
+                Start Adventure
+            </button>
 
-            <option value="citadel">
-                Citadel of Ricks
-            </option>
+            <p id="message"></p>
 
-            <option value="blips-and-chitz">
-                Blips and Chitz
-            </option>
-
-            <option value="prime-dimension">
-                Prime Dimension
-            </option>
-
-            <option value="doofus-dimension">
-                Doofus Dimension
-            </option>
-        </select>
-
-        <button onclick="startAdventure()">
-            Start Adventure
-        </button>
-
-        <p id="message"></p>
-
-    </section>
+        </section>
 
     </main>
 
@@ -120,6 +80,3 @@
     </footer>
 
 </body>
-</html>
-
-    
