@@ -254,8 +254,6 @@ footer {
 
     max-width: 700px;
 
-    background-color: rgba(255, 255, 255, 0.08);
-
     border: 2px solid #97ce4c;
     border-radius: 15px;
 
@@ -350,14 +348,17 @@ html {
 }
 
 
-/* NAME INPUT */
+/* FORM FIELDS */
 
-.adventure-box input {
+.adventure-box input,
+.adventure-box select,
+.adventure-box textarea {
     width: 100%;
 
     padding: 12px;
 
     font-size: 16px;
+    font-family: Arial, sans-serif;
 
     background-color: #111f29;
     color: white;
@@ -369,22 +370,28 @@ html {
 }
 
 
-/* DESTINATION SELECT */
+/* TEXTAREA */
 
-.adventure-box select {
-    width: 100%;
+.adventure-box textarea {
+    min-height: 100px;
+    resize: vertical;
+}
 
-    padding: 12px;
 
-    font-size: 16px;
+/* PLACEHOLDER */
 
-    background-color: #111f29;
-    color: white;
+.adventure-box input::placeholder,
+.adventure-box textarea::placeholder {
+    color: #aaaaaa;
+}
 
-    border: 2px solid #97ce4c;
-    border-radius: 6px;
 
-    outline: none;
+/* FOCUS */
+
+.adventure-box input:focus,
+.adventure-box select:focus,
+.adventure-box textarea:focus {
+    border-color: #9be044;
 }
 
 
