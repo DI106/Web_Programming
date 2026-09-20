@@ -9,32 +9,24 @@
 
     <link rel="stylesheet" href="CSS/style.css">
 
-    <style>
-        body.adventures-page {
-            margin: 0;
-            min-height: 100vh;
-
-            background-image: url("images/portalAD.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-
-            font-family: Arial, sans-serif;
-        }
-    </style>
 </head>
 
 <body class="adventures-page">
 
-    <header>
-        <nav class="nav-menu">
-            <a href="index.html">HOME</a>
-            <a href="characters.html">CHARACTERS</a>
-            <a href="multiverse.html">MULTIVERSE</a>
-            <a href="adventures.html">ADVENTURES</a>
-        </nav>
-    </header>
+   <header class="site-header">
+
+    <div class="logo">
+        RICK AND MORTY
+    </div>
+
+    <nav class="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="characters.html">CHARACTERS</a>
+        <a href="multiverse.html">MULTIVERSE</a>
+        <a href="adventures.html">ADVENTURES</a>
+    </nav>
+
+</header>
 
 
     <main>
@@ -93,53 +85,63 @@
 
 </section>
 
+<section class="multiverse-gallery">
+
+    <h2>Multiverse Gallery</h2>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/633/633291.png" alt="Earth C-137">
+            <div class="gallery-caption">Earth C-137</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/citadel.jpg" alt="Citadel of Ricks">
+            <div class="gallery-caption">Citadel of Ricks</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/blipsandchitz.jpg" alt="Blips and Chitz">
+            <div class="gallery-caption">Blips and Chitz</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/prime.jpg" alt="Prime Dimension">
+            <div class="gallery-caption">Prime Dimension</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/669993.png" alt="Doofus Dimension">
+            <div class="gallery-caption">Doofus Dimension</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://c4.wallpaperflare.com/wallpaper/999/767/698/rick-and-morty-space-wallpaper-preview.jpg" alt="C-137 World">
+            <div class="gallery-caption">C-137 World</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://external-preview.redd.it/better-late-than-never-updated-rick-morty-no-mans-sky-v0-KC6_WNamrTLcZHHUnxqdLR42N1tS6dCo4WlxEigZYp0.jpg?auto=webp&s=d674f3583d5a93c86abb2eab2d0bec30c91e4be4" alt="Citadel">
+            <div class="gallery-caption">The Citadel</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/028/853/683/large/nicholas-cole-jordan-flgtz-rickmorty-panorama-watermarked.jpg?1595716690" alt="Intergalactic Arcade">
+            <div class="gallery-caption">Intergalactic Arcade</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdrBbyX2g_65TsSOIntKybNp_5AwWkfByoyB6uJmIbg19TkUXjLWx7h7P&s=10" alt="Another Dimension">
+            <div class="gallery-caption">Another Dimension</div>
+        </div>
+
+    </div>
+
+</section>
+
     </main>
-            <img src="images/poopybutthole.png" alt="Mr. Poopybutthole" style="position: absolute; bottom: 0; left: 0; width: 100px; height: auto;">
-
-
-<img src="images/poopybutthole.png" alt="Mr. Poopybutthole" style="position: absolute; bottom: 0; right: 0; width: 150px; height: auto;">
-    
-    <script>
-    function startAdventure() {
-
-        const playerName =
-            document.getElementById("player-name").value;
-
-        const playerEmail =
-            document.getElementById("player-email").value;
-
-        const destination =
-            document.getElementById("destination").value;
-
-        const adventureMessage =
-            document.getElementById("adventure-message").value;
-
-        const message =
-            document.getElementById("message");
-
-
-        if (playerName === "") {
-            message.textContent = "Please enter your name!";
-            return;
-        }
-
-
-        if (playerEmail === "") {
-            message.textContent = "Please enter your email!";
-            return;
-        }
-
-
-        if (destination === "") {
-            message.textContent = "Please select a destination!";
-            return;
-        }
-
-
-        window.location.href =
-            "multiverse.html#" + destination;
-    }
-</script>
+            <img src="images/poopybutthole.png" alt="Mr. Poopybutthole" class="adventure-character-left">
 
     <footer>
         <p>
@@ -147,6 +149,7 @@
         </p>
     </footer>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>

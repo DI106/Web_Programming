@@ -1,15 +1,39 @@
-const destination = document.getElementById("destination");
-const startButton = document.getElementById("start-adventure");
+function startAdventure() {
+    const playerName =
+        document.getElementById("player-name").value;
 
-startButton.addEventListener("click", function () {
+    const playerEmail =
+        document.getElementById("player-email").value;
 
-    const selectedLocation = destination.value;
+    const destination =
+        document.getElementById("destination").value;
 
-    if (selectedLocation === "") {
-        alert("Please select a destination!");
+    const adventureMessage =
+        document.getElementById("adventure-message").value;
+
+    const message =
+        document.getElementById("message");
+
+    if (playerName === "") {
+        message.textContent = "Please enter your name!";
         return;
     }
 
-    window.location.href = "multiverse.html#" + selectedLocation;
+    if (playerEmail === "") {
+        message.textContent = "Please enter your email!";
+        return;
+    }
 
-});
+    if (destination === "") {
+        message.textContent = "Please select a destination!";
+        return;
+    }
+
+    if (adventureMessage === "") {
+        message.textContent = "Please enter your adventure message!";
+        return;
+    }
+
+    window.location.href =
+        "multiverse.html#" + destination;
+}

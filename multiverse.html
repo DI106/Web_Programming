@@ -8,34 +8,42 @@
     <title>Rick and Morty - Multiverse</title>
 
     <link rel="stylesheet" href="CSS/style.css">
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background-image: url('images/multiedit.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-    </style>
 </head>
 
-<body class="multiverse-page", class = "characters-main">
+<body class="multiverse-page">
 
-    <header>
-        <nav class="nav-menu">
-            <a href="index.html">HOME</a>
-            <a href="characters.html">CHARACTERS</a>
-            <a href="multiverse.html">MULTIVERSE</a>
-            <a href="adventures.html">ADVENTURES</a>
-        </nav>
-    </header>
+        <div class="multiverse-grid">
+
+        <header class="site-header">
+
+    <div class="logo">
+        RICK AND MORTY
+    </div>
+
+    <nav class="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="characters.html">CHARACTERS</a>
+        <a href="multiverse.html">MULTIVERSE</a>
+        <a href="adventures.html">ADVENTURES</a>
+    </nav>
+
+</header>
+
+<aside class="multiverse-sidebar">
+
+    <h2>Locations</h2>
+
+    <a href="#earth-c137">Earth C-137</a>
+    <a href="#citadel">Citadel of Ricks</a>
+    <a href="#blips-and-chitz">Blips and Chitz</a>
+    <a href="#prime-dimension">Prime Dimension</a>
+    <a href="#doofus-dimension">Doofus Dimension</a>
+
+</aside>
 
 
     <main class="multiverse-layout">
 
-        <!-- CENTER -->
         <section class="multiverse-content">
 
             <h1>THE MULTIVERSE</h1>
@@ -106,77 +114,81 @@
 
         </section>
 
-        <img src="images/poopybutthole.png" alt="Mr. Poopybutthole" style="position: absolute; bottom: 0; left: 0; width: 70px; height: auto;">
+        <section class="universe-details">
+
+            <div class="universe-card" id="earth-c137">
+                <h2>Earth C-137</h2>
+                <img src="images/c137_.jpeg" alt="Earth C-137">
+
+                <p>
+                    Earth C-137 is one of the most important dimensions
+                    in the Rick and Morty multiverse. It is strongly connected
+                    with Rick C-137 and many major events in the series.
+                </p>
+            </div>
+
+
+            <div class="universe-card" id="citadel">
+                <h2>Citadel of Ricks</h2>
+                <img src="images/citadel.jpg" alt="Citadel of Ricks">
+
+                <p>
+                    The Citadel of Ricks is a huge space station populated
+                    by many different versions of Rick and Morty from
+                    different dimensions.
+                </p>
+            </div>
+
+
+            <div class="universe-card" id="blips-and-chitz">
+                <h2>Blips and Chitz</h2>
+                <img src="images/blipsandchitz.jpg" alt="Blips and Chitz">
+
+                <p>
+                    Blips and Chitz is an intergalactic arcade filled with
+                    strange games and entertainment from across the universe.
+                </p>
+            </div>
+
+
+            <div class="universe-card" id="prime-dimension">
+                <h2>Prime Dimension</h2>
+                <img src="images/prime.jpg" alt="Prime Dimension">
+
+                <p>
+                    The Prime Dimension is an important reality connected
+                    to several major characters and events in the series.
+                </p>
+            </div>
+
+
+            <div class="universe-card" id="doofus-dimension">
+                <h2>Doofus Dimension</h2>
+                <img src="images/doofus.jpg" alt="Doofus Dimension">
+
+                <p>
+                    The Doofus Dimension is one of the many unusual realities
+                    in the multiverse and is associated with an alternative
+                    version of Rick.
+                </p>
+            </div>
+        </section>
+
+        <img
+            class="multiverse-character-left"
+            src="images/poopybutthole.png"
+            alt="Mr. Poopybutthole"
+        >
 
     </main>
-
-    <section class="universe-details">
-
-    <div class="universe-card" id="earth-c137">
-        <h2>Earth C-137</h2>
-        <img src="images/c137_.jpeg" alt="Earth C-137">
-
-        <p>
-            Earth C-137 is one of the most important dimensions
-            in the Rick and Morty multiverse. It is strongly connected
-            with Rick C-137 and many major events in the series.
-        </p>
-    </div>
-
-
-    <div class="universe-card" id="citadel">
-        <h2>Citadel of Ricks</h2>
-        <img src="images/citadel.jpg" alt="Citadel of Ricks">
-
-        <p>
-            The Citadel of Ricks is a huge space station populated
-            by many different versions of Rick and Morty from
-            different dimensions.
-        </p>
-    </div>
-
-
-    <div class="universe-card" id="blips-and-chitz">
-        <h2>Blips and Chitz</h2>
-        <img src="images/blipsandchitz.jpg" alt="Blips and Chitz">
-
-        <p>
-            Blips and Chitz is an intergalactic arcade filled with
-            strange games and entertainment from across the universe.
-        </p>
-    </div>
-
-
-    <div class="universe-card" id="prime-dimension">
-        <h2>Prime Dimension</h2>
-        <img src="images/prime.jpg" alt="Prime Dimension">
-
-        <p>
-            The Prime Dimension is an important reality connected
-            to several major characters and events in the series.
-        </p>
-    </div>
-
-
-    <div class="universe-card" id="doofus-dimension">
-        <h2>Doofus Dimension</h2>
-        <img src="images/doofus.jpg" alt="Doofus Dimension">
-
-        <p>
-            The Doofus Dimension is one of the many unusual realities
-            in the multiverse and is associated with an alternative
-            version of Rick.
-        </p>
-    </div>
-        <img src="images/poopybutthole.png" alt="Mr. Poopybutthole" style="position: absolute; bottom: 0; right: 0; width: 150px; height: auto;">
-
-</section>
 
     <footer>
         <p>Team Members: Alinur Baidulla, Diyar Daniyarov</p>
     </footer>
 
 
+    </div>
 </body>
+
 
 </html>
